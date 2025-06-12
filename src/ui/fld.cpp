@@ -381,9 +381,9 @@ void ui::fldRefreshMenu()
         fs::dirItem *di = fldList->getDirItemAt(i);
         fldMenu->addOpt(NULL, di->getItm());
 
-        fldMenu->optAddButtonEvent(fldInd, HidNpadButton_A, fldFuncOverwrite, di);
+        fldMenu->optAddButtonEvent(fldInd, HidNpadButton_A, fldFuncRestore, di);
         fldMenu->optAddButtonEvent(fldInd, HidNpadButton_X, fldFuncDelete, di);
-        fldMenu->optAddButtonEvent(fldInd, HidNpadButton_Y, fldFuncRestore, di);
+        fldMenu->optAddButtonEvent(fldInd, HidNpadButton_Y, fldFuncOverwrite, di);
         fldMenu->optAddButtonEvent(fldInd, HidNpadButton_ZR, fldFuncUpload, di);
     }
 
